@@ -1,0 +1,30 @@
+{
+  "name": "untitled-folder",
+  "version": "1.0.0",
+  "description": "parcial2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch --analyze",
+    "visualize-bundle": "webpack --analyze"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonlao/parcial2-eco.git"
+  },
+  "author": "Laura Cobo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonlao/parcial2-eco/issues"
+  },
+  "homepage": "https://github.com/moonlao/parcial2-eco#readme",
+  "dependencies": {
+    "firebase": "^9.6.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^4.5.0"
+  }
+}
