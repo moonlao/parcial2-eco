@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, onValue, push } from "firebase/database";
 
 import { getFirebaseConfig } from "./utils";
+import { Book } from "./Book";
 
 
 const correo = document.getElementById('correo');
@@ -39,8 +40,8 @@ function actualizarLista(info){
         Object.keys(info).forEach((k, index)=>{
             console.log(k, index);
             console.log("Objeto", info[k])
-            const card = new userCard(info[k])
-            userList.appendChild(card.render());
+            const book = new Book(info[k])
+            userList.appendChild(book.render());
         });
 
     } else {
